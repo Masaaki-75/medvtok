@@ -609,7 +609,7 @@ def get_csvimgfeat_dataset(args, is_train, epoch=0, iters=0, tokenizer=None):
     mixed_resolution_training = bool(args.mixed_resolution_training)
     keep_ratio = bool(args.keep_ratio)
     preset_resolutions = (256, 384, 512) if mixed_resolution_training else None
-    # This can be True or False during training; evaluation does not use SmartResize.
+    # This can be True or False during training.
     # It selects random or nearest target resolutions during training. Enabled by default.
     random_preset = True if is_train else False
     ablation_modality = getattr(args, 'ablation_modality', None)

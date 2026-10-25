@@ -4,9 +4,15 @@
 
 **One token interface across medical imaging dimensions, modalities, and tasks.**
 
-[Project Page](https://masaaki-75.github.io/medvtok/) · [Model Weights](https://huggingface.co/massaki75/medvtok) · [Demo](demo.ipynb) · [Setup Guide](GUIDELINE.md) · [Training](#training) · [Citation](#citation)
+[![Project Page](https://img.shields.io/badge/%F0%9F%8C%90%20Project-Page-7C83C3?style=flat-square)](https://masaaki-75.github.io/medvtok/)
+[![Model Weights](https://img.shields.io/badge/%F0%9F%A4%97%20Model-Hugging%20Face-FFD21E?style=flat-square)](https://huggingface.co/massaki75/medvtok)
+![Paper](https://img.shields.io/badge/%F0%9F%93%84%20Paper-Coming%20Soon-6C757D?style=flat-square)
 
 </div>
+
+<p align="center">
+  <img src="docs/assets/teaser.png" alt="MedVTok unifies 2D and 3D medical imaging across modalities and downstream tasks." width="100%">
+</p>
 
 ## 🔎 Overview
 
@@ -19,6 +25,10 @@ MedVTok encodes **2D medical images and 3D volumes into a unified token space**,
 - **Multi-Expert Representation Alignment (MERA)** combines shared-space contrastive alignment with complementary alignment in each expert's native space.
 
 A single transformer encoder-decoder produces global features, spatial patch tokens, and continuous Gaussian latents for downstream tasks and reconstruction.
+
+<p align="center">
+  <img src="docs/assets/method.png" alt="MedVTok encoder-decoder with Slice Differential Regularization and Multi-Expert Representation Alignment." width="100%">
+</p>
 
 ## 🚀 Getting Started
 
@@ -120,6 +130,8 @@ Feel free to try other expert models; stronger pretrained models may further imp
 │   ├── examples_3d.csv             # Example 3D training metadata
 │   └── vis_imgs/                   # Demo images and volumes
 ├── datasets/                       # 2D/3D data loading
+├── docs/
+│   └── assets/                     # Teaser and method figures
 ├── encoders/                       # Medical expert encoders
 ├── layers/                         # Model building blocks
 ├── models/                         # Tokenizer, wrapper, and discriminator
