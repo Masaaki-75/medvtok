@@ -130,15 +130,10 @@ Feel free to try other expert models; stronger pretrained models may further imp
 │   ├── examples_3d.csv             # Example 3D training metadata
 │   └── vis_imgs/                   # Demo images and volumes
 ├── datasets/                       # 2D/3D data loading
-├── docs/
-│   └── assets/                     # Teaser and method figures
 ├── encoders/                       # Medical expert encoders
 ├── layers/                         # Model building blocks
 ├── models/                         # Tokenizer, wrapper, and discriminator
-├── scripts/
-│   ├── adapt_siglip2_to_medvtok/   # SigLIP2 encoder weight conversion
-│   ├── expert_feature_extraction/  # 2D/3D expert feature extraction
-│   └── training/                   # Stage 1 and Stage 2 launch scripts
+├── scripts/                        # Training launch and data preprocessing scripts
 ├── trainers/                       # Training loops and optimization
 ├── utilities/                      # Losses, configuration, and helpers
 ├── build_env.sh                    # Conda environment setup
