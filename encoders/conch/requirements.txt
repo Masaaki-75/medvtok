@@ -1,0 +1,9 @@
+# Core dependencies for simplified CONCH implementation
+torch>=2.0.1
+torchvision
+timm>=0.9.8
+pillow
+numpy
+
+# Required for UNI-style AttentionalPooler (CONCHv1.5)
+einops>=0.6.0
