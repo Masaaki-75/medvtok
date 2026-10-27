@@ -6,7 +6,7 @@
 
 [![Project Page](https://img.shields.io/badge/%F0%9F%8C%90%20Project-Page-7C83C3?style=flat-square)](https://masaaki-75.github.io/medvtok/)
 [![Model Weights](https://img.shields.io/badge/%F0%9F%A4%97%20Model-Hugging%20Face-FFD21E?style=flat-square)](https://huggingface.co/massaki75/medvtok)
-![Paper](https://img.shields.io/badge/%F0%9F%93%84%20Paper-Coming%20Soon-6C757D?style=flat-square)
+[![Paper](https://img.shields.io/badge/arXiv-2610.35842-B31B1B?style=flat-square)](https://arxiv.org/abs/2610.35842)
 
 </div>
 
@@ -153,11 +153,13 @@ Feel free to try other expert models; stronger pretrained models may further imp
 If you find our model and code useful in your research, please kindly cite our paper :)
 
 ```bibtex
-@inproceedings{ma2026medvtok,
+@misc{ma2026medvtok,
   title  = {MedVTok: A General-Purpose Medical Visual Tokenizer},
   author = {Ma, Chenglong and Ji, Yuanfeng and Ning, Junzhi and Liu, Jiyao and Wei, Yujie and Rui, Shaohao and Zhang, Chaoyang and Li, Wenjie and Tang, Wenhao and Tang, Cheng and Li, Wei and Gao, Shujian and Zhang, Yujie and Chen, Ying and Li, Zilong and Ge, Zongyuan and Song, Diping and Ye, Jin and Hu, Ming and He, Junjun and Shan, Hongming},
-  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
-  year   = {2026}
+  year   = {2026},
+  eprint = {2610.35842},
+  archivePrefix = {arXiv},
+  url    = {https://arxiv.org/abs/2610.35842}
 }
 ```
 
